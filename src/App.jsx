@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 import Product from "./pages/Product";
@@ -9,12 +9,15 @@ import Login from "./pages/Login";
 import AppLayout from "./pages/AppLayout";
 import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
+import City from "./components/City";
+import Form from "./components/Form";
 
 const BASE_URL = "http://localhost:9000";
 function App() {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
+  console.log("app", cities);
   useEffect(function () {
     async function fetchCities() {
       try {
@@ -46,6 +49,10 @@ function App() {
           <Route
             path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
+          />
+          <Route
+            path="cities/:id"
+            element={<City cities={cities} isLoading={isLoading} />}
           />
           <Route
             path="countries"

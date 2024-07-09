@@ -1,7 +1,9 @@
 import Spinner from "./Spinner";
-import styles from "./CountriesList.module.css";
-import CountryItem from "./CityItem";
+import styles from "./CountryList.module.css";
+// import CountryItem from "./CityItem";
 import Message from "./Message";
+// import CityItem from "./CityItem";
+import CountryItem from "./CountryItem";
 
 function CountryList({ cities, isLoading }) {
   if (isLoading) return <Spinner />;
@@ -16,11 +18,10 @@ function CountryList({ cities, isLoading }) {
       return [...arr, { country: city.country, emoji: city.emoji }];
     else return arr;
   }, []);
-
   return (
     <ul className={styles.countryList}>
-      {countries.map((city) => (
-        <CountryItem city={city} key={city.id} />
+      {countries.map((country) => (
+        <CountryItem country={country} key={country.country} />
       ))}
     </ul>
   );
