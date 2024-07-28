@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": 73930385
-    },
-    {
       "cityName": "Madrid",
       "country": "Spain",
       "emoji": "🇪🇸",
@@ -22,7 +10,7 @@
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -34,7 +22,31 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "id": "c509",
+      "cityName": "Miranda do Douro",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2024-07-28T13:46:42.501Z",
+      "notes": "",
+      "position": {
+        "lat": "41.440706309298804",
+        "lng": "-6.416015625000001"
+      }
+    },
+    {
+      "id": "52e1",
+      "cityName": "Salorino",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-07-28T13:46:45.385Z",
+      "notes": "",
+      "position": {
+        "lat": "39.49949413019738",
+        "lng": "-6.96533203125"
+      }
     }
   ]
 }
