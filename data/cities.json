@@ -35,6 +35,18 @@
         "lat": "41.440706309298804",
         "lng": "-6.416015625000001"
       }
+    },
+    {
+      "id": "8505",
+      "cityName": "Les Valls de Valira",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-08-20T14:25:52.720Z",
+      "notes": "lazada cafe",
+      "position": {
+        "lat": "42.4681689998201",
+        "lng": "1.40625"
+      }
     }
   ]
 }
